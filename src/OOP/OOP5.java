@@ -17,8 +17,7 @@ public class OOP5 {
 	}
 
 	public void chuanHoa() {
-		StringBuilder sb = new StringBuilder(this.ngaySinh);
-		StringBuilder sb2 = new StringBuilder(this.ngayKy);
+		StringBuilder sb = new StringBuilder(this.ngaySinh), sb2 = new StringBuilder(this.ngayKy);
 		if (sb.charAt(1) == '/') {
 			sb.insert(0, "0");
 		}
@@ -43,9 +42,9 @@ public class OOP5 {
 	public void chuanHoaTen() {
 		this.hoTen = this.hoTen.toLowerCase();
 		String[] arr = this.hoTen.split("\\s+");
-		StringBuffer sb = new StringBuffer();
-		for(int i = 0; i < arr.length; i++) {
-			sb.append(Character.toUpperCase(arr[i].charAt(0))).append(arr[i].substring(1)).append(" ");
+		StringBuilder sb = new StringBuilder();
+		for (String s : arr) {
+			sb.append(Character.toUpperCase(s.charAt(0))).append(s.substring(1)).append(" ");
 		}
 		this.hoTen = sb.toString().trim();
 	}

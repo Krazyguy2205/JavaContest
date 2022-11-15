@@ -102,17 +102,14 @@ public class OOP24 {
 			arr[i].chuanHoa();
 		}
 
-		Arrays.sort(arr, new Comparator<OOP24>() {
-			@Override
-			public int compare(OOP24 o1, OOP24 o2) {
-				if (o1.getGpa() != o2.getGpa()) {
-					if (o1.getGpa() > o2.getGpa())
-						return -1;
-					else 
-						return 1;
-				} else {
-					return o1.getMaSV().compareTo(o2.getMaSV());
-				}
+		Arrays.sort(arr, (o1, o2) -> {
+			if (o1.getGpa() != o2.getGpa()) {
+				if (o1.getGpa() > o2.getGpa())
+					return -1;
+				else
+					return 1;
+			} else {
+				return o1.getMaSV().compareTo(o2.getMaSV());
 			}
 		});
 

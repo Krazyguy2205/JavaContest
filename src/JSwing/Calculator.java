@@ -132,18 +132,10 @@ public class Calculator implements ActionListener {
         if (e.getSource() == equl) {
             num2 = Double.parseDouble(textField.getText());
             switch (operator) {
-                case '+':
-                    result = num1 + num2;
-                    break;
-                case '-':
-                    result = num1 - num2;
-                    break;
-                case '*':
-                    result = num1 * num2;
-                    break;
-                case '/':
-                    result = num1 / num2;
-                    break;
+                case '+' -> result = num1 + num2;
+                case '-' -> result = num1 - num2;
+                case '*' -> result = num1 * num2;
+                case '/' -> result = num1 / num2;
             }
             textField.setText(String.valueOf(result));
             num1 = result;

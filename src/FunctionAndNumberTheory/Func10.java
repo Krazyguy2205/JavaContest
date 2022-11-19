@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Func10 {
     //Đếm ước của số nguyên dương
-    @SuppressWarnings("resource")
     public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();

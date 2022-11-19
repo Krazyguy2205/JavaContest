@@ -7,10 +7,10 @@ public class StrAdv8 {
 		Scanner sc = new Scanner(System.in);
 		String s = sc.nextLine();
 		s = s.replaceAll("", "").toLowerCase();
-		String res = "";
+		StringBuilder res = new StringBuilder();
 		for (char ch = 'a'; ch <= 'z'; ch++) {
 			if (s.indexOf(ch) != -1)
-				res += ch;
+				res.append(ch);
 		}
 
 		if (res.length() == 26)

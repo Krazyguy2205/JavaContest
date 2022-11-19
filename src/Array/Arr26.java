@@ -3,7 +3,6 @@ package Array;
 import java.util.Scanner;
 
 public class Arr26 {
-	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
@@ -13,10 +12,10 @@ public class Arr26 {
 		for(int i = 0; i < n; i++) {
 			a[i] = sc.nextInt();
 			mark[a[i]] = 1;
-		} 
-		
-		for(int i = 0; i < mark.length; i++) {
-			if(mark[i] != 0)
+		}
+
+		for (int j : mark) {
+			if (j != 0)
 				++cnt;
 		}
 		System.out.println(cnt);

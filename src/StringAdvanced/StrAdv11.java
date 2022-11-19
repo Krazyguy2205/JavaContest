@@ -16,7 +16,7 @@ public class StrAdv11 {
 		
 		System.out.println();
 
-		Arrays.sort(arr, new Comparator<String>() {
+		Arrays.sort(arr, new Comparator<>() {
 			@Override
 			public int compare(String o1, String o2) {
 				if (o1.length() != o2.length())

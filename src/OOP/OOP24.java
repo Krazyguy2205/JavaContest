@@ -74,16 +74,16 @@ public class OOP24 {
 		this.ngaySinh = sb.toString();
 
 		String[] arr = this.hoTen.split("\\s+");
-		String res = "";
+		StringBuilder res = new StringBuilder();
 		for(String x : arr) {
-			res += Character.toUpperCase(x.charAt(0));
+			res.append(Character.toUpperCase(x.charAt(0)));
 			for(int i = 1; i < x.length(); i++) {
-				res += Character.toLowerCase(x.charAt(i));
+				res.append(Character.toLowerCase(x.charAt(i)));
 			}
-			res += " ";
+			res.append(" ");
 		}
-		res = res.substring(0, res.length() - 1);
-		this.hoTen = res;
+		res = new StringBuilder(res.substring(0, res.length() - 1));
+		this.hoTen = res.toString();
 	}
 
 	@Override

@@ -9,12 +9,7 @@ public class Str17 {
 		Scanner sc = new Scanner(System.in);
 		String s = sc.nextLine();
 		String[] arr = s.split("\\s+");
-		Arrays.sort(arr, new Comparator<String>() {
-			@Override
-			public int compare(String o1, String o2) {
-				return o1.compareTo(o2);
-			}
-		});
+		Arrays.sort(arr, String::compareTo);
 		
 		for(String x : arr) {
 			System.out.print(x + " ");
@@ -22,12 +17,7 @@ public class Str17 {
 		
 		System.out.println();
 		
-		Arrays.sort(arr, new Comparator<String>() {
-			@Override
-			public int compare(String o1, String o2) {
-				return o2.compareTo(o1);
-			}
-		});
+		Arrays.sort(arr, Comparator.reverseOrder());
 		
 		for(String x : arr) {
 			System.out.print(x + " ");

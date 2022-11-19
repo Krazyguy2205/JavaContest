@@ -20,9 +20,8 @@ public class StrAdv3_2 {
 				map1.put(x, 1);
 			}
 		}
-		
-		TreeMap<Character, Integer> map2 = new TreeMap<>();
-		map2.putAll(map1);
+
+		TreeMap<Character, Integer> map2 = new TreeMap<>(map1);
 		for(Map.Entry<Character, Integer> entry : map2.entrySet()) {
 			System.out.println(entry.getKey() + " " + entry.getValue());
 		}

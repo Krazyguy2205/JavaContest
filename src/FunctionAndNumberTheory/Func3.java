@@ -11,8 +11,7 @@ public class Func3 {
 		return n > 1;
 	}
 
-    @SuppressWarnings("resource")
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
 		while(t-- > 0) {

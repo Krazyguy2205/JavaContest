@@ -11,13 +11,12 @@ public class Func8 {
 		return n > 1;
 	}
 
-    @SuppressWarnings("resource")
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		long n = sc.nextLong();
 		for (int i = 1; i <= Math.sqrt(n); i++) {
 			if (prime(i)) {
-				System.out.print(1l * i * i + " ");
+				System.out.print((long) i * i + " ");
 			}
 		}
 	}

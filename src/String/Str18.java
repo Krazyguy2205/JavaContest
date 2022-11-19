@@ -10,14 +10,11 @@ public class Str18 {
 		Scanner sc = new Scanner(System.in);
 		String s = sc.nextLine();
 		String[] arr = s.split("\\s+");
-		Arrays.sort(arr, new Comparator<String>() {
-			@Override
-			public int compare(String o1, String o2) {
-				if(o1.length() != o2.length())
-					return o1.length() - o2.length();
-				else 
-					return o1.compareTo(o2);
-			}
+		Arrays.sort(arr, (o1, o2) -> {
+			if(o1.length() != o2.length())
+				return o1.length() - o2.length();
+			else
+				return o1.compareTo(o2);
 		});
 		
 		for(String x : arr) {

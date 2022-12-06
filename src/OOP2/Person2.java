@@ -25,6 +25,10 @@ public class Person2 {
         return name;
     }
 
+    public String getDiaChi() {
+        return diaChi;
+    }
+
     @Override
     public String toString() {
         return this.ma + " " + this.name + " " + this.ngaySinh + " " + this.diaChi;

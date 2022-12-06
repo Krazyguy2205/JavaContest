@@ -41,18 +41,7 @@ public class OOP9 {
         this.luongCoBan = luongCoBan;
     }
 
-    public void input() {
-        Scanner sc = new Scanner(System.in);
-        ma = sc.nextLine();
-        hoTen = sc.nextLine();
-        luongCoBan = sc.nextInt();
-    }
-
     public static void main(String[] args) {
-        OOP9 gv = new OOP9();
-        gv.input();
-        System.out.print(gv.getMa() + " " + gv .getHoTen() + " ");
-        // gv.getHeSo();
-        // gv.getSalary();
+
     }
 }
